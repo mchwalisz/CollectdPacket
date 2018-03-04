@@ -17,7 +17,7 @@
 //            Abstraction class to create a collectd packet suitable to be sent
 //            to a running collectd server.
 
-#include "Arduino.h"
+#include "application.h"
 
 #ifndef CollectdPacket_h
 #define CollectdPacket_h
