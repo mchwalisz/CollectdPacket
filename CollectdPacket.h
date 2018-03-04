@@ -38,15 +38,15 @@ class CollectdPacket
         void addTimestamp( unsigned long timestamp );
         void addTimestampHR( unsigned long timestamp );
         void addValue( byte type, float value );
-        
+
         word getPacketSize( void );
         byte *getPacketBuffer( void );
         void resetPacket( void );
-        
+
     private:
         byte buffer[ 256 ];
         word offset;
-        
+
         void add_string( word packet_id, const char *string );
         void add_numeric( word packet_id, unsigned long value );
         void add_numeric_hr( word packet_id, unsigned long value );
